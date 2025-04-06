@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      @apply text-gray-900 bg-gradient-to-b from-blue-50/50 to-white;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      @apply tracking-tight;
+    }
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
